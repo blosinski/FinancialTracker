@@ -8,15 +8,26 @@
 </head>
 <body>
 	<h1>Brendan's Financial Tracker</h1>
-	<h2>Please enter your monthly salary:</h2>
-	<form>
+	<h2>Please enter your monthly income:</h2>
+	<form id="myForm">
 		<input type="text" pattern="[0-9]*" title="Please enter numbers only" placeholder="e.g. 3500" required>
 		<input type="submit" value="Enter">
+		<button id="export-btn">Export data to CSV</button>
 	</form>
 	<div class="chart-container">
-		<canvas id="myChart1"></canvas>
-		<canvas id="myChart2"></canvas>
-		<canvas id="myChart3"></canvas>
+		<div class="chart-wrapper">
+			<h3 class="chart-title"></h3>
+			<canvas id="myChart1"></canvas>
+		  </div>
+		  <div class="chart-wrapper">
+			<h3 class="chart-title"></h3>
+			<canvas id="myChart2"></canvas>
+		  </div>
+		  <div class="chart-wrapper">
+			<h3 class="chart-title"></h3>
+			<canvas id="myChart3"></canvas>
+		  </div>
+		  </div>
 	</div>
 </body>
 </html>
